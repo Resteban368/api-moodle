@@ -24,16 +24,24 @@ class User extends Authenticatable
         'username',
         'firstname',
         'lastname',
-        'email',
+        'email',//correo institucional
+        'department',
+        'city',
+        'address',
+        'skype',//skype 
+        'msn',//facebbok
+        'yahoo',//youtube
         'phone1',
         'phone2',
         'institution',
-        'department',
-        'address',
-        'city',
         'country',
         'description',
         'password',
+        'lastnamephonetic',
+        'firstnamephonetic',
+        'middlename',
+        'alternatename',
+        'aim',
     ];
 
 
