@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\userController;
 use App\Http\Controllers\categoryController;
 use App\Http\Controllers\cursosController;
+use App\Http\Controllers\ForumController;
+use App\Http\Controllers\ForumDiscussionController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,5 +30,9 @@ route::resource('/api/user',userController::class);
 route::resource('/api/category',categoryController::class);
 //vamos a definir una rota resource para el controlador de cursos
 route::resource('/api/cursos',cursosController::class);
+//vamos a definir una rota resource para el controlador de foros
+route::resource('/api/foros',ForumController::class);
+//vamos a definir una rota resource para el controlador de forosDiscusiones
+route::resource('/api/foroDiscusiones',ForumDiscussionController::class);
 
 Route::get('/api/cursos/category/{id}',[cursosController::class,'getCursoByCategory']);
